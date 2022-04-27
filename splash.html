@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"/>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <title>Pil Kyu Cho</title>
+</head>
+<body>
+    <!-- Home -->
+    <section id="home" class="home">
+        <h1 class="section_title">Hello World! My Name Is <strong>Pil Kyu Cho</strong></h1>
+        <p class="section_description">You can call me <strong>Philip</strong></p>
+        <img src="images/profile.png" alt="" class="home_img">
+    </section>
+
+    <!-- About me -->
+    <section id="about_me" class="about_me">
+        <p class="subtitle">Get To Know</p>
+        <h2 class="title">About Me</h2>
+        <div class="grid">
+            <p class="section_description">Web Developer and Programmer</p>
+            <div class="about_me_body">
+                <p>I am a computer science student at Technical University of Delft, Netherlands. In addition, I am part of the 
+                    student software developent team of robotics startup Krill</p>
+                <p>The very first application I created was 3 years ago; a calculator written in Python. Despite being a very
+                    simple program, I will never forget the feeling of satisfaction of creating a functioning program. Since then, 
+                    I have had a passion for developing applications, currently focused on web and database applications</p>
+                <p>My goal is to learn as much as I can from all those around me and apply it to create bigger and more 
+                    functional software systems. While I take my theoretical and academic learning seriously, I am a big believer in 
+                    field-based learning. As long as humans exist to give feedbacks, the potential of any software system is endless</p>
+            </div>
+            <img src="images/scene.png" class="about_me_img">
+        </div>
+    </section>
+
+    <!-- services -->
+    <section id="services" class="services">
+        <p class="subtitle">What I Offer</p>
+        <h2 class="title">Skills and Services</h2>
+        <div class="cards">
+            <!-- Languages -->
+            <div class="card">
+                <h3>Languages</h3>
+                <p>JavaScript</p>
+                <p>TypeScript</p>
+                <p>Java</p>
+                <p>Python</p>
+                <p>SQL</p>
+                <p>CSS</p>
+                <p>HTML</p>
+                <p>Assembly</p>
+            </div>
+
+            <!-- Tools -->
+            <div class="card">
+                <h3>Tools</h3>
+                <p>Node.js</p>
+                <p>Spring framework</p>
+                <p>Git</p>
+                <p>Pandas library</p>
+                <p>MongoDB</p>
+                <p>PostgreSQL</p>
+                <p>Gradle</p>
+                <P>JavaFX library</P>
+            </div>
+
+            <!-- Services -->
+            <div class="card">
+                <h3>Services</h3>
+                <p>Web application</p>
+                <p>Java application</p>
+                <p>Web scraping</p>
+                <p>User authentication</p>
+                <p>Data visualization</p>
+                <p>Database manipulation</p>
+                <p>Database analysis</p>
+            </div>
+        </div>
+        <a href="/download-cv"><button>Download my CV</button></a>
+    </section>
+
+    <!-- project -->
+    <section id="project" class="project">
+        <p class="subtitle">Recent and Ongoing</p>
+        <h2 class="title">Projects</h2>
+        <div class="project_cards">
+            <!-- project item #1 -->
+            <div class="project_card">
+                <!-- <h3>Student Dashboard</h3> -->
+                <div>Coming soon</div>
+                <!-- <img src="images/waterstats.png">
+                <a href=""><button>Live Demo</button></a> -->
+            </div>
+
+            <!-- project item #2 -->
+            <div class="project_card">
+                <h3>Water Stats</h3>
+                <img src="images/waterstats.png">
+                <a href="https://netherlands-water-stats.herokuapp.com/"><button>Live Demo</button></a>
+            </div>
+
+            <!-- project item #3 -->
+            <div class="project_card">
+                <!-- <h3>Quote Generator</h3> -->
+                <div>Coming soon</div>
+                <!-- <img src="images/waterstats.png">
+                <a href=""><button>Live Demo</button></a> -->
+            </div>
+        </div>
+    </section>
+
+     <!-- contact -->
+    <section id="contact" class="contact">
+        <p class="subtitle">Get In Touch</p>
+        <h2 class="title">Contact Me</h2>
+        <div class="contact_container">
+            <div class="contact_cards">
+                <!-- Email -->
+                <div class="contact_card">
+                    <span class="material-icons-sharp">email</span>
+                    <div><strong>Email</strong></div>
+                    <div class="detail">comsci.p.cho@gmail.com</div>
+                    <a href="mailto:comsci.p.cho@gmail.com">Send email</a>
+                </div>
+
+                <!-- Whatsapp -->
+                <div class="contact_card">
+                    <span class="material-icons-sharp">call</span>
+                    <div><strong>Whatsapp</strong></div>
+                    <div class="detail">+31644021296</div>
+                    <a href="https://wa.me/31644021296">Whatsapp me</a>
+                </div>
+
+                <!-- Linkedin -->
+                <div class="contact_card">
+                    <span class="material-icons-sharp">group</span>
+                    <div><strong>Linkedin</strong></div>
+                    <div class="detail">pil-kyu-cho-95bb0996</div>
+                    <a href="https://www.linkedin.com/in/pil-kyu-cho-95bb0996/">Check my Linkedin</a>
+                </div>
+            </div>
+
+            <!-- Message form -->
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="txt-field">
+                    <input class="name" placeholder="Full Name" maxlength="50" type="text" id="name" required>
+                </div>
+                <div class="txt-field">
+                    <input class="email" placeholder="Email" maxlength="50" type="email" id="email" required>
+                </div>
+                <div class="txt-field">
+                    <textarea class="message" placeholder="Sorry temporarily disabled due to technical difficulties" maxlength="200" id="message"></textarea>
+                </div>
+                <!-- <button type="submit">Send Message</button> -->
+            </form>
+        </div>
+    </section>
+
+    <!-- Nav -->
+    <div class="navigation">
+        <div>
+            <a href="#home">
+                <span class= "material-icons-sharp">home</span>
+            </a>
+        </div>
+        <div>
+            <a href="#about_me">
+                <span class="material-icons-sharp">person</span>
+            </a>
+        </div>
+        <div>
+            <a href="#services">
+                <span class="material-icons-sharp">description</span>
+            </a>
+        </div>
+        <div>
+            <a href="#project">
+                <span class="material-icons-sharp">handshake</span>
+            </a>
+        </div>
+        <div>
+            <a href="#contact">
+                <span class="material-icons-sharp">chat</span>
+            </a>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    </script>
+</body>
+</html>
