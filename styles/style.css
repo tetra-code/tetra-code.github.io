@@ -10,6 +10,7 @@
     --color-dark: #303030;
     --color-light: #fff;
     --color-accent: #303c6c;
+    --color-accent-support: rgb(22, 67, 131);
     --color-chill: #08c8f8;
 
     --ff-primary: 'Poppins', sans-serif;
@@ -97,7 +98,7 @@ h3 {font-size: var(--fs-h3);}
 }
 
 .section_description {
-    background: var(--color-accent);
+    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-support));
     font-family: var(--ff-secondary);
     padding: 0.25em 1em;
     color: var(--color-light);
@@ -146,7 +147,7 @@ h3 {
         display: grid;
         width: min-content;
         margin: 0 auto;
-        grid-column-gap: 1em;
+        grid-column-gap: 2em;
         grid-template-areas: 
             "img title"
             "img subtitle";
@@ -192,6 +193,7 @@ h3 {
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
+        padding-right: 1em;
     }
 
     .about_me .section_description {
@@ -222,7 +224,7 @@ h3 {
 }
 
 .services .card {
-    background: var(--color-accent);
+    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-support));
     border-radius: 10px;
     box-shadow: 10px 10px var(--color-dark);
     margin: 30px 10px 30px;
@@ -265,7 +267,7 @@ h3 {
 }
 
 .project_card {
-    background: var(--color-accent);
+    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-support));
     border-radius: 10px;
     box-shadow: 10px 10px var(--color-dark);
     margin: 30px 10px 30px;
@@ -330,7 +332,7 @@ h3 {
 }
 
 .contact_card {
-    background: var(--color-accent);
+    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-support));
     border-radius: 10px;
     box-shadow: 10px 10px var(--color-dark);
     padding: 1em;
