@@ -121,11 +121,11 @@ button {
     outline: none;
     background-color: Transparent;
     border: 1px solid var(--color-dark);
+    transition: 0.2s;
 }
 
 button:hover {
     background: var(--color-accent);
-    transition: 0.2s;
     color: var(--color-light);
     border-color: var(--color-accent);
 }
@@ -292,7 +292,6 @@ h3 {
 }
 
 .project_card button:hover {
-    transition: 0.2s;
     color: var(--color-chill);
     border-color: var(--color-chill);
 }
